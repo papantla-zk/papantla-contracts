@@ -8,6 +8,7 @@ import "@hyperlane-xyz/core/interfaces/IMailbox.sol";
 contract InsuranceArbitrator {
     using SafeERC20 for IERC20;
     IMailbox inbox; // mumbai 0xCC737a94FecaeC165AbCf12dED095BB13F037685
+    // gnosis 0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70
     bytes32 public lastSender;
     string public lastMessage;
 

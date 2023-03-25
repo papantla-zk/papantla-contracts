@@ -26,7 +26,7 @@ contract InsuranceDataCheck {
     bytes32 public assertionId;
 
     // Hyperlane Send Messagin
-    // 0xCC737a94FecaeC165AbCf12dED095BB13F037685 optimismgoerli
+    // 0xCC737a94FecaeC165AbCf12dED095BB13F037685 goerli
     // 0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70 optimism
     IMailbox outbox;
 

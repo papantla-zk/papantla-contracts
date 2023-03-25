@@ -27,25 +27,26 @@ npx hardhat run scripts/deploy.js
 
 ### Testnet Addresses
 
-* Optimism Goerli:
+* OracleDataCheck Goerli:
   * OptimisticOracleV3Interface: `0x9923D42eF695B5dd9911D05Ac944d4cAca3c4EAB`
   * Outbox: `0xCC737a94FecaeC165AbCf12dED095BB13F037685`
-  * OracleDataCheck: `...pending!`
+  * OracleDataCheck: `0x5837d7635e7E9bf06245A75Ccd00A9a486Dd0b72`
 
-* Gnosis testnet:
-  * IMailbox: (mumbai) `0xCC737a94FecaeC165AbCf12dED095BB13F037685` **IMailbox not available on gnosis testnet (chiado)**
-  * Currency: (USDC) `0x010101010`, (Dai) `0x0x0x0x`
-  * Insurance: `0x0000111`
+* MUMBAI:
+  * IMailbox: `0xCC737a94FecaeC165AbCf12dED095BB13F037685`
+  * Currency: (USDC) `0xe9DcE89B076BA6107Bb64EF30678efec11939234`
+    - [Aave Faucet](https://app.aave.com/faucet/?marketName=proto_mumbai_v3)
+  * Insurance: `0x5837d7635e7E9bf06245A75Ccd00A9a486Dd0b72`
 
 ### Mainnet Addresses
 
-* Optimism:
-  * OptimisticOracleV3Interface: ``
-  * Outbox: ``
+* OracleDataCheck Optimism:
+  * OptimisticOracleV3Interface: `0x072819Bb43B50E7A251c64411e7aA362ce82803B`
+  * Outbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
   * OracleDataCheck: ``
 
 * Gnosis Mainnet:
-  * IMailbox: ``
+  * IMailbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
   * Currency: (xDai) `0x0x0x0x`
   * Insurance: ``
 
