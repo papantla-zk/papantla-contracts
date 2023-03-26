@@ -39,7 +39,8 @@
 * OracleDataCheck Optimism:
   * OptimisticOracleV3Interface: `0x072819Bb43B50E7A251c64411e7aA362ce82803B`
   * Outbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
-  * OracleDataCheck: ``
+  * OracleDataCheck: `0x5837d7635e7E9bf06245A75Ccd00A9a486Dd0b72`
+    - [Tx](https://optimistic.etherscan.io/tx/0x6866be14d08d7622a8a0ee105767cd4ece1e75114aab00119ff0751e8f611577)
 
 * Insurance Gnosis Mainnet:
   * IMailbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
@@ -87,7 +88,7 @@ Finding wallets for all the necessary addresses...
 ##
 Sending transactions [0 - 12].
 ⠄ [00:00:01] [######################################################################################################################################] 13/13 txes (0.0s)
-Transactions saved to: /Users/artur/Desktop/scaling-eth/hyperlane-deploy/broadcast/DeployCore.s.sol/10200/run-latest.json
+Transactions saved to: ../scaling-eth/hyperlane-deploy/broadcast/DeployCore.s.sol/10200/run-latest.json
 
 ##
 Waiting for receipts.
@@ -176,7 +177,7 @@ Block: 3016935
 Paid: 0.003177663007414547 ETH (1059221 gas * 3.000000007 gwei)
 
 
-Transactions saved to: /Users/artur/Desktop/scaling-eth/hyperlane-deploy/broadcast/DeployCore.s.sol/10200/run-latest.json
+Transactions saved to: ../scaling-eth/hyperlane-deploy/broadcast/DeployCore.s.sol/10200/run-latest.json
 
 
 
@@ -185,7 +186,7 @@ Transactions saved to: /Users/artur/Desktop/scaling-eth/hyperlane-deploy/broadca
 ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
 Total Paid: 0.032780406076487614 ETH (10926802 gas * avg 3.000000007 gwei)
 
-Transactions saved to: /Users/artur/Desktop/scaling-eth/hyperlane-deploy/broadcast/DeployCore.s.sol/10200/run-latest.json
+Transactions saved to: ../scaling-eth/hyperlane-deploy/broadcast/DeployCore.s.sol/10200/run-latest.json
 ```
 
 ## Validator Announce
@@ -308,7 +309,7 @@ Finding wallets for all the necessary addresses...
 ##
 Sending transactions [0 - 5].
 ⠂ [00:00:00] [########################################################################################################################################] 6/6 txes (0.0s)
-Transactions saved to: /Users/artur/Desktop/scaling-eth/hyperlane-deploy/broadcast/DeployMultisigIsm.s.sol/10200/run-latest.json
+Transactions saved to: ../scaling-eth/hyperlane-deploy/broadcast/DeployMultisigIsm.s.sol/10200/run-latest.json
 
 ##
 Waiting for receipts.
@@ -351,7 +352,7 @@ Block: 3086929
 Paid: 0.00013152000030688 ETH (43840 gas * 3.000000007 gwei)
 
 
-Transactions saved to: /Users/artur/Desktop/scaling-eth/hyperlane-deploy/broadcast/DeployMultisigIsm.s.sol/10200/run-latest.json
+Transactions saved to: ../scaling-eth/hyperlane-deploy/broadcast/DeployMultisigIsm.s.sol/10200/run-latest.json
 
 
 
@@ -360,5 +361,5 @@ Transactions saved to: /Users/artur/Desktop/scaling-eth/hyperlane-deploy/broadca
 ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
 Total Paid: 0.009585663022366547 ETH (3195221 gas * avg 3.000000007 gwei)
 
-Transactions saved to: /Users/artur/Desktop/scaling-eth/hyperlane-deploy/broadcast/DeployMultisigIsm.s.sol/10200/run-latest.json
+Transactions saved to: ../scaling-eth/hyperlane-deploy/broadcast/DeployMultisigIsm.s.sol/10200/run-latest.json
 ```
