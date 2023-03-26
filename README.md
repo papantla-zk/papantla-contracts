@@ -1,16 +1,12 @@
 # Intro to Papantla  
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+<div align="center">
+  <a href="https://github.com/ArturVargas/Papantla">
+    <img alt="logo" src="assets/papantla_ban.png" width="210" height="200" />
+  </a>
+  <h3 align="center">If your flight is cancelled, we pay you immediately. Papantla: Insurance without intermediaries..</h3>
+</div>
+<br/>
 
 ## Docs
 
@@ -45,9 +41,9 @@ npx hardhat run scripts/deploy.js
   * Outbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
   * OracleDataCheck: ``
 
-* Gnosis Mainnet:
+* Insurance Gnosis Mainnet:
   * IMailbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
-  * Currency: (xDai) `0x0x0x0x`
+  * Currency: [FAU](https://erc20faucet.com/) `0x3111C94B9243a8A99D5A867e00609900e437E2c0`
   * Insurance: ``
 
 ## Hyperlane Chiado Deployment (Gnosis testnet)
