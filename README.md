@@ -39,8 +39,8 @@
 * OracleDataCheck Optimism:
   * OptimisticOracleV3Interface: `0x072819Bb43B50E7A251c64411e7aA362ce82803B`
   * Outbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
-  * OracleDataCheck: `0x5837d7635e7E9bf06245A75Ccd00A9a486Dd0b72`
-    - [Tx](https://optimistic.etherscan.io/tx/0x6866be14d08d7622a8a0ee105767cd4ece1e75114aab00119ff0751e8f611577)
+  * OracleDataCheck: `0xB8Fc096F5128f1021097462815a4e6df17155998`
+    - [Tx](https://optimistic.etherscan.io/tx/0x19708fa481d40348cd856837c889a6ca0120663a587a2638412f83341abafec2)
 
 * Insurance Gnosis Mainnet:
   * IMailbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
