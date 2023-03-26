@@ -32,7 +32,11 @@
   * IMailbox: `0xCC737a94FecaeC165AbCf12dED095BB13F037685`
   * Currency: (USDC) `0xe9DcE89B076BA6107Bb64EF30678efec11939234`
     - [Aave Faucet](https://app.aave.com/faucet/?marketName=proto_mumbai_v3)
+  * Insurance: `0x19F13C58ff7ee2aB8e72905cfEAbdF8F8dED0720`
+
+* SCROLL:
   * Insurance: `0x5837d7635e7E9bf06245A75Ccd00A9a486Dd0b72`
+  * [Tx](https://blockscout.scroll.io/tx/0x7cc94273e800ac5d58d4a68fda008314b192c2fa01347b5441d2a12038e59c0f)
 
 ### Mainnet Addresses
 
@@ -45,7 +49,8 @@
 * Insurance Gnosis Mainnet:
   * IMailbox: `0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70`
   * Currency: [FAU](https://erc20faucet.com/) `0x3111C94B9243a8A99D5A867e00609900e437E2c0`
-  * Insurance: ``
+  * Insurance: `0x19F13C58ff7ee2aB8e72905cfEAbdF8F8dED0720`
+    - [Tx](https://gnosisscan.io/tx/0x44e4e23dd655b07c2092f85726794d978aea3d66e5e3764da56c08e801b4f9c4)
 
 ## Hyperlane Chiado Deployment (Gnosis testnet)
 
