@@ -29,6 +29,8 @@
   * OracleDataCheck: `0x5837d7635e7E9bf06245A75Ccd00A9a486Dd0b72`
 
 * MUMBAI:
+ --> last version: InsuranceArbitrator address: `0xDCF29AC5dfE4f96B994A5D5fcc56418d44C94E56`
+  
   * IMailbox: `0xCC737a94FecaeC165AbCf12dED095BB13F037685`
   * Currency: (USDC) `0xe9DcE89B076BA6107Bb64EF30678efec11939234`
     - [Aave Faucet](https://app.aave.com/faucet/?marketName=proto_mumbai_v3)

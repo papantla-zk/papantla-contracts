@@ -3,15 +3,18 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@hyperlane-xyz/core/interfaces/IMailbox.sol";
+import "./InsuraceDataCheck.sol";
+
+// import "@hyperlane-xyz/core/interfaces/IMailbox.sol";
 
 contract InsuranceArbitrator {
     using SafeERC20 for IERC20;
-    IMailbox inbox; // mumbai 0xCC737a94FecaeC165AbCf12dED095BB13F037685
+    // IMailbox inbox; // mumbai 0xCC737a94FecaeC165AbCf12dED095BB13F037685
     // gnosis 0x35231d4c2D8B8ADcB5617A638A0c4548684c7C70
-    bytes32 public lastSender;
-    string public lastMessage;
+    // bytes32 public lastSender;
+    // string public lastMessage;
 
+    InsuranceDataCheck public _insuranceDataCheck;
     // Stores state and parameters of insurance policy.
     struct InsurancePolicy {
         bool claimInitiated; // Claim state preventing simultaneous claim attempts.
@@ -57,11 +60,13 @@ contract InsuranceArbitrator {
     );
     event ClaimAccepted(bytes32 indexed claimId, bytes32 indexed policyId);
     event ClaimRejected(bytes32 indexed claimId, bytes32 indexed policyId);
-    event ReceivedMessage(uint32 origin, bytes32 sender, bytes message);
 
-    constructor(address _currency, address _inbox) {
+    // event ReceivedMessage(uint32 origin, bytes32 sender, bytes message);
+
+    constructor(address _currency) {
+        // address _inbox
         currency = IERC20(_currency);
-        inbox = IMailbox(_inbox);
+        // inbox = IMailbox(_inbox);
     }
 
     /**
@@ -123,11 +128,8 @@ contract InsuranceArbitrator {
      * @param policyId Identifier of claimed insurance policy.
      */
     function submitClaim(bytes32 policyId) external {
-        require(
-            keccak256(abi.encodePacked(lastMessage)) ==
-                keccak256(abi.encodePacked("Flight Was cancelled")),
-            "Invalid Claim"
-        );
+        bool result = _insuranceDataCheck.getAssertionResult();
+        require(result == true, "Invalid Claim");
         InsurancePolicy storage claimedPolicy = insurancePolicies[policyId];
         require(
             claimedPolicy.insuredAddress != address(0),
@@ -150,16 +152,16 @@ contract InsuranceArbitrator {
         emit ClaimSubmitted(block.timestamp, claimId, policyId);
     }
 
-    function handle(
-        uint32 _origin, // 420 Opt mainnet
-        bytes32 _sender, // OracleDataCheck address
-        bytes calldata _message // "Flight Was cancelled"
-    ) external {
-        lastSender = _sender;
-        lastMessage = string(_message);
+    // function handle(
+    //     uint32 _origin, // 420 Opt mainnet
+    //     bytes32 _sender, // OracleDataCheck address
+    //     bytes calldata _message // "Flight Was cancelled"
+    // ) external {
+    //     lastSender = _sender;
+    //     lastMessage = string(_message);
 
-        emit ReceivedMessage(_origin, _sender, _message);
-    }
+    //     emit ReceivedMessage(_origin, _sender, _message);
+    // }
 
     /******************************************
      *           INTERNAL FUNCTIONS           *
